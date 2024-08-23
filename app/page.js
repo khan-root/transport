@@ -1,5 +1,9 @@
+import Home from "@/view/Home/Home";
+
 export default function HomePage(){
   return(
-    <span>This is Home</span>
+    <div className="flex-1 border border-black">
+      <Home />
+    </div>
   )
 }

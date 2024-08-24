@@ -12,7 +12,9 @@
     "framer-motion": "^11.3.30",
     "next": "14.2.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-slick": "^0.30.2",
+    "transport": "file:"
   },
   "devDependencies": {
     "eslint": "^8",

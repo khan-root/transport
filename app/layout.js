@@ -2,7 +2,6 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
 const inter = Roboto({weight :['100', '300', '400', '500', '700', '900'], subsets: ["latin"] });
 
 export const metadata = {
@@ -13,11 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={'flex flex-col h-screen w-screen ' + inter.className}>
+      <body className={'relative' + inter.className}>
         <Navbar />  
-        {children}
+          {children}
         <Footer />
       </body>
     </html>
   );
 }
+
+

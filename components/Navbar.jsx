@@ -3,6 +3,7 @@ import { navabrData } from '@/utils/dataUtils'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
+import Button from './Button'
 
 
 const Navbar = () => {
@@ -26,22 +27,27 @@ const Navbar = () => {
         <div>
           Logo
         </div>
-        <div className='hidden lg:block space-x-4'>
-          {navabrData.map((ele)=> {
-            const isActive = pathname === ele.url
-            return(
-              <Link href={ele.url} key={ele.id}
-                className={`text-[20px] text-white ${isActive ? 'border-b-2 border-white' : 'hover:border-b hover:border-b-white'}`}
+        <div className='flex items-center gap-3'>
+          <div className='hidden lg:block space-x-4'>
+            {navabrData.map((ele)=> {
+              const isActive = pathname === ele.url
+              return(
+                <Link href={ele.url} key={ele.id}
+                  className={`text-[20px] text-white ${isActive ? 'border-b-2 border-white' : 'hover:border-b hover:border-b-white'}`}
 
-              >
-                {ele.title}
-              </Link>
-          )})}
+                >
+                  {ele.title}
+                </Link>
+            )})}
+          </div>
+            <Button 
+              title='Book Now'
+            />
         </div>
         <div className='block lg:hidden'>
           <span className='flex items-center justify-center cursor-pointer border border-white w-9 h-9'>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 text-white">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 text-white">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
 
           </span>

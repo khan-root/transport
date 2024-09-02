@@ -1,3 +1,4 @@
+import Button from '@/components/Button'
 import CardDetails from '@/components/CardDetails'
 import React from 'react'
 
@@ -16,7 +17,11 @@ const Explorer = () => {
             <CardDetails />
             <CardDetails />
         </div>
-        <div>Bottom</div>
+        <div className='flex items-center justify-center py-3'>
+            <Button 
+                title='Browse All'
+            />
+        </div>
     </div>
   )
 }

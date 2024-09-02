@@ -12,7 +12,8 @@ module.exports = {
         primary:{
           bluish:'#108ce6',
           gray:'#f7f7f7',
-          lightGray:'#f8f9fa'
+          lightGray:'#f8f9fa',
+          blackGray:'#707070'
         },
 
       },

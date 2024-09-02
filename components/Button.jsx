@@ -33,11 +33,11 @@ const Button = ({ title, bgWhite=false }) => {
   return (
     <div>
       <button
-        className={`btn relative overflow-hidden px-4 py-3 w-fit before:bg-primary-bluish bg-white border border-primary-bluish font-semibold text-xl tracking-widest
+        className={`btn relative overflow-hidden px-4 py-3 w-fit before:bg-white bg-primary-bluish border border-primary-bluish font-semibold text-xl tracking-widest text-white
           before:absolute before:w-0 before:h-0 before:top-[var(--y)] before:left-[var(--x)] before:rounded-full  
           before:transform before:translate-x-[-50%] before:translate-y-[-50%] before:opacity-0
           hover:before:w-[500px] hover:before:h-[500px] hover:before:opacity-100 before:z-0
-          hover:text-white
+          hover:text-black
           before:transition-all before:duration-500
           group`}
         ref={btnRef}

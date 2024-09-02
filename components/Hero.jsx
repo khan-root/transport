@@ -30,8 +30,8 @@ const Hero = () => {
                 <Button title='Discover More' />
               </div>
             </div>
-            <div className='flex-[.5] p-2'>
-              <div className='bg-white shadow-md pl-2 py-2 pr-6 space-y-3'>
+            <div className='flex-[.5] p-4 bg-white shadow-md'>
+              <div className='bg-white space-y-3'>
                 <div className='flex flex-col gap-2'>
                   <span className='text-[20px] font-semibold'>Find Your Ride</span>
                   <span>Search by boat name or location around you.</span>

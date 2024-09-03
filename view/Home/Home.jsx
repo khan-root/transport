@@ -6,6 +6,7 @@ import Location from './Location'
 import CountData from './CountData'
 import FAQs from './FAQs'
 import OurBlog from './OurBlog'
+import Testimonial from './Testimonial'
 
 const Home = () => {
   return (
@@ -32,6 +33,9 @@ const Home = () => {
         <div className='backdrop-blur-sm bg-primary-bluish/50'>
           <OurBlog />
         </div>
+      </div>
+      <div className='bg-primary-lightGray'>
+        <Testimonial />
       </div>
     </div>
   )

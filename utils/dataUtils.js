@@ -5,3 +5,5 @@ export const navabrData = [
     {id:4, title:'Blog', url:'/blog'},
     {id:5, title:'Contact', url:'/contact'},
 ]
+
+

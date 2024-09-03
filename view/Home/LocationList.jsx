@@ -4,7 +4,7 @@ import React from 'react';
 
 const LocationList = () => {
   return (
-    <div className="shadow-md rounded-md overflow-hidden">
+    <div className="shadow-md rounded-md overflow-hidden cursor-pointer">
       <div className="relative group"> {/* Add the 'group' class */}
         {/* Image with hover scale */}
         <motion.img

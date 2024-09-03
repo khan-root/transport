@@ -14,18 +14,12 @@ const Home = () => {
       <div className='bg-primary-lightGray'>
         <MiniAboutSection />
       </div>
-      <div>
-        <Explorer />
-      </div>
+      <Explorer />
       <div className='bg-primary-lightGray'>
         <BookNow />
       </div>
-      <div>
-        <Location />  
-      </div>
-      <div>
-        <CountData />
-      </div>
+      <Location />  
+      <CountData />
       <div className='bg-primary-lightGray'>
         <FAQs />
       </div>

@@ -8,7 +8,7 @@ import { FaPersonBooth } from 'react-icons/fa6'
 const BookNow = () => {
   return (
     <div className='w-full lg:w-10/12 lg:mx-auto h-full py-20 space-y-3'>
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 px-2 lg:px-0'>
             <div className='space-y-3 p-2'>
                 <div className='flex flex-col gap-3'>
                     <span className='text-[20px] font-cursive'>Book Now</span>

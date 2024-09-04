@@ -12,6 +12,7 @@ const BlogList = () => {
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 1, ease: "easeInOut" }}
+                className='w-full'
             />
         </div>
         <div className='p-3 space-y-4'>

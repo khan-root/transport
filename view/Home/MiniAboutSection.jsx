@@ -7,7 +7,7 @@ const MiniAboutSection = () => {
       <div className='grid grid-cols-1 lg:grid-cols-2'>
           <div className='relative'>
             <img src='/assets/WhatsApp Image 2024-08-28 at 20.08.04.jpeg' className='w-full h-[500px] object-cover'/>
-            <div className="absolute top-0 right-[-10%] h-full flex items-center">
+            <div className="lg:absolute lg:top-0 lg:right-[-10%] lg:h-full lg:flex lg:items-center hidden">
               <img
                 src="/assets/WhatsApp Image 2024-08-28 at 20.08.05.jpeg"
                 className="h-[200px] object-cover border-4 border-white"

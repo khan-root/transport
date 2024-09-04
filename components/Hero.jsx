@@ -6,15 +6,15 @@ import AutoCarousel from './AutoCarousel'; // Import the carousel
 
 const Hero = () => {
   return (
-    <div className='w-full h-screen relative'>
+    <div className='w-full h-screen relative px-4'>
       {/* Background Carousel */}
       <AutoCarousel />
 
       {/* Overlay Content */}
-      <div className='w-full lg:w-9/12 lg:mx-auto h-full relative z-10'>
+      <div className='w-full lg:w-9/12 lg:mx-auto h-full relative z-10 px-4'>
         <div className='absolute top-[20%] w-full left-0 right-0'>
-          <div className='flex'>
-            <div className='h-full flex-1 space-y-4'>
+          <div className='grid grid-cols-12 gap-3'>
+            <div className='h-full col-span-12 lg:col-span-8 space-y-4'>
               <div className='font-cursive text-[20px] font-semibold text-white'>
                 <span>Your Dream Boats.</span>
               </div>
@@ -30,7 +30,7 @@ const Hero = () => {
                 <Button title='Discover More' />
               </div>
             </div>
-            <div className='flex-[.5] p-4 bg-white shadow-md'>
+            <div className='col-span-12 lg:col-span-4 p-4 bg-white shadow-md'>
               <div className='bg-white space-y-3'>
                 <div className='flex flex-col gap-2'>
                   <span className='text-[20px] font-semibold'>Find Your Ride</span>

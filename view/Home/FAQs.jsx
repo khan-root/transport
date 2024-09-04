@@ -25,12 +25,12 @@ const FAQs = () => {
 
   return (
     <div className='w-full lg:w-10/12 lg:mx-auto h-full pt-20 pb-10 space-y-3'>
-      <div className='grid grid-cols-2 h-full items-center'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 h-full items-center'>
         <div className='space-y-3 p-2 h-full self-center'>
-          <div className='flex flex-col gap-3'>
+          <div className='flex flex-col gap-3 items-center lg:items-start'>
             <span className='text-[20px] font-cursive'>FAQ</span>
-            <span className='text-[25px] font-bold'>Frequently Asked Questions</span>
-            <span className='text-primary-blackGray'>
+            <span className='text-[25px] text-center font-bold'>Frequently Asked Questions</span>
+            <span className='text-primary-blackGray text-center lg:text-start'>
               Then consider your profile and. Set an hourly rate that mirrors your and aptitude in the best light.GoFundMe are among the most popular.
             </span>
           </div>

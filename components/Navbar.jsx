@@ -40,9 +40,12 @@ const Navbar = () => {
                 </Link>
             )})}
           </div>
+          <div className='hidden lg:block'>
+
             <Button 
               title='Book Now'
-            />
+              />
+          </div>
         </div>
         <div className='block lg:hidden'>
           <span className='flex items-center justify-center cursor-pointer border border-white w-9 h-9'>

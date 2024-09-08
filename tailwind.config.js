@@ -20,6 +20,7 @@ module.exports = withMT({
       },
       fontFamily:{
         cursive: ['"Shadows Into Light"', 'cursive'],
+        teko:['"Teko"', 'sans-serif']
       },
       backgroundImage: {
         'countDataBg': "url('/assets/buscover.jpg')",

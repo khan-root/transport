@@ -25,7 +25,7 @@ const Navbar = () => {
     <div className={`px-2 py-5 fixed top-0 left-0 right-0 z-[9999] ${top ? 'bg-transparent-' : 'bg-primary-bluish'}`}>
       <div className='w-full flex items-center justify-between lg:w-9/12 lg:mx-auto'>
         <div>
-          Logo
+          <img src='/assets/logo.png' className='w-10 h-10' />
         </div>
         <div className='flex items-center gap-3'>
           <div className='hidden lg:block space-x-4'>
@@ -40,12 +40,12 @@ const Navbar = () => {
                 </Link>
             )})}
           </div>
-          <div className='hidden lg:block'>
+          {/* <div className='hidden lg:block'>
 
             <Button 
               title='Book Now'
               />
-          </div>
+          </div> */}
         </div>
         <div className='block lg:hidden'>
           <span className='flex items-center justify-center cursor-pointer border border-white w-9 h-9'>

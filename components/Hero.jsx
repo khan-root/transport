@@ -6,7 +6,7 @@ import AutoCarousel from './AutoCarousel'; // Import the carousel
 
 const Hero = () => {
   return (
-    <div className='w-full h-screen relative'>
+    <div className='w-full h-[200px] lg:h-screen relative'>
       {/* Background Carousel */}
       <AutoCarousel />
 

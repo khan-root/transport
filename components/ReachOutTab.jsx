@@ -47,7 +47,7 @@ const ReachOutTab = () => {
                 <FaWhatsapp
                     className="text-green-500 cursor-pointer"
                     size={24}
-                    onClick={() => openLink('https://wa.me/your-number')}
+                    onClick={() => openLink('https://wa.me/+923116565767')}
                 />
               </motion.span>
               <motion.span 

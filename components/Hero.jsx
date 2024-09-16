@@ -6,12 +6,12 @@ import AutoCarousel from './AutoCarousel'; // Import the carousel
 
 const Hero = () => {
   return (
-    <div className='w-full h-screen relative px-4'>
+    <div className='w-full h-screen relative'>
       {/* Background Carousel */}
       <AutoCarousel />
 
       {/* Overlay Content */}
-      <div className='w-full lg:w-10/12 lg:mx-auto h-full relative z-10 px-4'>
+      {/* <div className='w-full lg:w-10/12 lg:mx-auto h-full relative z-10 px-4'>
         <div className='absolute top-[20%] w-full left-0 right-0'>
           <div className='grid grid-cols-12 gap-3'>
             <div className='h-full col-span-12 lg:col-span-7 space-y-3'>
@@ -63,10 +63,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Overlay for Darkening Background */}
-      <div className='absolute inset-0 bg-black opacity-50'></div>
+      {/* <div className='absolute inset-0 bg-black opacity-50'></div> */}
     </div>
   );
 };

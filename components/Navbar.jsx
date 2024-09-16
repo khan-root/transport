@@ -22,7 +22,7 @@ const Navbar = () => {
     window.addEventListener('scroll', changeColor);
   }, []);
   return (
-    <div className={`px-2 py-5 fixed top-0 left-0 right-0 z-[9999] ${top ? 'bg-transparent-' : 'bg-primary-bluish'}`}>
+    <div className={`px-2 py-5  ${top ? 'bg-primary-bluish' : 'bg-primary-bluish'}`}>
       <div className='w-full flex items-center justify-between lg:w-9/12 lg:mx-auto'>
         <div>
           <img src='/assets/logo.png' className='w-10 h-10' />

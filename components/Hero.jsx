@@ -64,6 +64,7 @@ const Hero = () => {
           </div>
         </div>
       </div> */}
+      
 
       {/* Overlay for Darkening Background */}
       {/* <div className='absolute inset-0 bg-black opacity-50'></div> */}

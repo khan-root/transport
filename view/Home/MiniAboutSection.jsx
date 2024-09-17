@@ -1,7 +1,16 @@
+"use client"
 import Button from '@/components/Button'
 import React from 'react'
 
+import { useRouter } from 'next/navigation'
+
 const MiniAboutSection = () => {
+
+  const router = useRouter()
+
+    const handleBrowseAllClick = () => {
+        router.push('/about'); // Replace with the desired route
+    };
   return (
 
     <>
@@ -52,6 +61,7 @@ const MiniAboutSection = () => {
           <div className='flex items-center justify-center lg:block'>
             <Button 
               title='About Us'
+              onClick={handleBrowseAllClick}
             />
           </div>
          </div>

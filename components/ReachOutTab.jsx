@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
+import { IoLogoWechat } from 'react-icons/io5';
 
 const ReachOutTab = () => {
   const [showPopover, setShowPopover] = useState(false);
@@ -31,6 +32,8 @@ const ReachOutTab = () => {
         Reach Out
       </motion.div>
 
+      
+
       {showPopover && (
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -44,21 +47,31 @@ const ReachOutTab = () => {
                 className='cursor-pointer'
             >
 
-                <FaWhatsapp
-                    className="text-green-500 cursor-pointer"
-                    size={24}
-                    onClick={() => openLink('https://wa.me/+923116565767')}
-                />
-              </motion.span>
-              <motion.span 
-                whileHover={{scale:1.2}}
-                className='cursor-pointer'
-              >
-                <FaFacebookMessenger
-                    className="text-blue-500 cursor-pointer"
-                    size={24}
-                    onClick={() => openLink('https://m.me/your-username')}
-                />
+              <FaWhatsapp
+                  className="text-green-500 cursor-pointer"
+                  size={24}
+                  onClick={() => openLink('https://wa.me/+923116565767')}
+              />
+            </motion.span>
+            <motion.span 
+              whileHover={{scale:1.2}}
+              className='cursor-pointer'
+            >
+              <FaFacebookMessenger
+                  className="text-blue-500 cursor-pointer"
+                  size={24}
+                  onClick={() => openLink('https://m.me/your-username')}
+              />
+            </motion.span>
+            <motion.span 
+              whileHover={{scale:1.2}}
+              className='cursor-pointer'
+            >
+              <IoLogoWechat
+                  className="text-green-500 cursor-pointer"
+                  size={24}
+                  // onClick={() => openLink('https://u.wechat.com/kNBMWkz1GC6nMdmVchaRnBk')}
+              />
             </motion.span>
           </div>
         </motion.div>

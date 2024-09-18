@@ -20,7 +20,7 @@ const AutoCarousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[250px] lg:h-full overflow-hidden">
+    <div className="relative w-full h-[250px] md:[400px] lg:h-full overflow-hidden">
       <AnimatePresence>
         <motion.img
           key={currentIndex}

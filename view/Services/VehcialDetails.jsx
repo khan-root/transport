@@ -1,6 +1,7 @@
 import React from 'react'
 import VehcialImages from './VehcialImages'
 import VehcialDetailsTable from './VehcialDetailsTable';
+import CustomBookNowButton from '@/components/CustomBookNowButton';
 
 
 const images = [
@@ -53,6 +54,14 @@ const VehcialDetails = (props) => {
                 tableDesctription = {detailsData.tableDesctription}
                 tableHeader = {detailsData.tableHeader}
             />
+        </div>
+
+        <div>
+            <div className="flex items-center justify-center">
+                    <CustomBookNowButton 
+                        title='Book Now'
+                    />
+                </div>
         </div>
         
     </div> 

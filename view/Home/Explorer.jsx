@@ -17,17 +17,20 @@ const CardDetailsData = [
         ],
         tableHeader:['Bus Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a 51-Seater Charter Coach in Dubai is as follows',
-        image:'/assets/bus1.jpg'
+        image:'/assets/bus1.jpg',
+        btnName:'Bus'
     },
     {id:2, price:750, rangePrice: '', name:'Hiace Mid-Move', 
         ideal_seats:8, max_seat:12, class:'First Class',
         main_description:'A compact van with ample luggage space, perfect for small groups or airport transfers.',
-        image:'/assets/hiace1.jpg'
+        image:'/assets/hiace1.jpg',
+        btnName:'Hiace'
     },
     {id:3, price:650, rangePrice: '', name:'Small Car', 
         ideal_seats:4, max_seat:7, class:'First Class',
         main_description:'deal for small groups exploring the city with a driver and fuel included.',
-        image:'/assets/car1.jpg'
+        image:'/assets/car1.jpg',
+        btnName:'Car'
     },
 ]
 
@@ -53,6 +56,7 @@ const Explorer = () => {
                 <DynamicCardDetails 
                     key={ele.id}
                     data = {ele}
+                    btnName = {ele.btnName}
                 />
             ))}
         </div>

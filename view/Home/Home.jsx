@@ -18,16 +18,16 @@ const Home = () => {
       <div className='bg-primary-lightGray'>
         <BookNow />
       </div>
-      <Location />  
+      {/* <Location />   */}
       <CountData />
-      <div className='bg-primary-lightGray'>
+      <div className='bg-white'>
         <FAQs />
       </div>
-      <div className='bg-countDataBg bg-cover bg-center'>
+      {/* <div className='bg-countDataBg bg-cover bg-center'>
         <div className='backdrop-blur-sm bg-primary-bluish/50'>
           <OurBlog />
         </div>
-      </div>
+      </div> */}
       <div className='bg-primary-lightGray'>
         <Testimonial />
       </div>

@@ -9,7 +9,7 @@ import useZustandServices from '@/services/useZustandServices';
 
 
 const DynamicCardDetails = (props) => {
-    const {data}  = props
+    const {data, btnName}  = props
 
     const { settingDetailsData } = useZustandServices()
 
@@ -27,14 +27,14 @@ const DynamicCardDetails = (props) => {
 //   white-space: nowrap;
   return (
     <div className='shadow-md rounded-md'>
-       <div className='overflow-hidden cursor-pointer'>
+       <div className='overflow-hidden cursor-pointer h-[400px]'>
             <motion.img
                 src={data.image}
                 alt="bus"
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 1, ease: "easeInOut" }}
-                className='w-full'
+                className='w-full h-full'
             />
         </div>
         <div className='p-3 space-y-4'>
@@ -92,7 +92,7 @@ const DynamicCardDetails = (props) => {
         </div>
             <div className='pb-6'>
                 <Button 
-                    title='Bus Details'
+                    title={`${btnName} Details`}
                     onClick={handleBusDetailsClick}
                 />
             </div>

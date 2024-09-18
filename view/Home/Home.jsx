@@ -7,10 +7,14 @@ import CountData from './CountData'
 import FAQs from './FAQs'
 import OurBlog from './OurBlog'
 import Testimonial from './Testimonial'
+import DiscoverMore from './DiscoverMore'
 
 const Home = () => {
   return (
     <div>
+      <div className='bg-white'>
+        <DiscoverMore />
+      </div>
       <div className='bg-primary-lightGray'>
         <MiniAboutSection />
       </div>

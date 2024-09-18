@@ -5,7 +5,7 @@ const CountData = () => {
     <div
         className='bg-countDataBg h-[400px] w-full bg-cover bg-no-repeat bg-center'
     >
-        <div className='flex items-center h-full px-10 gap-4 text-white backdrop-blur-sm bg-white/10'>
+        <div className='flex items-center flex-wrap h-full px-10 gap-4 text-white backdrop-blur-sm bg-white/10'>
             <div className='flex flex-col gap-0 items-center'>
                 <span className='text-[35px] font-semibold'>255</span>
                 <span className='text-[30px] font-semibold'>Number of Buses</span>

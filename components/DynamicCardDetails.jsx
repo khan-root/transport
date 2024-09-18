@@ -29,7 +29,7 @@ const DynamicCardDetails = (props) => {
     <div className='shadow-md rounded-md'>
        <div className='overflow-hidden cursor-pointer'>
             <motion.img
-                src="/assets/WhatsApp Image 2024-08-28 at 20.08.08 (1).jpeg"
+                src={data.image}
                 alt="bus"
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.1 }}

@@ -1,4 +1,4 @@
-import React from 'react'
+import CustomBookNowButton from "@/components/CustomBookNowButton"
 
 const BookNow = () => {
   return (
@@ -12,7 +12,12 @@ const BookNow = () => {
                     <span className='text-primary-blackGray text-center'>Then consider your profile and. Set an hourly rate that mirrors your and aptitude in the best light.GoFundMe are among the most popular.</span>
                 </div>
                 <div className=''>
-                    <img src='/assets/WhatsApp Image 2024-08-28 at 20.08.08 (1).jpeg' alt='luxury' className='w-full' />
+                    <img src='/assets/bus2.jpg' alt='luxury' className='w-full' />
+                </div>
+                <div className="flex items-center justify-center">
+                    <CustomBookNowButton 
+                        title='Book Now'
+                    />
                 </div>
                 
             </div>

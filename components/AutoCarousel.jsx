@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-    '/assets/WhatsApp%20Image%202024-08-28%20at%2020.08.04.jpeg',
-    '/assets/WhatsApp%20Image%202024-08-28%20at%2020.08.05.jpeg',
-    '/assets/WhatsApp%20Image%202024-08-28%20at%2020.08.06.jpeg',
-    '/assets/WhatsApp%20Image%202024-08-28%20at%2020.08.07.jpeg',
+    '/assets/bus1.jpg',
+    '/assets/car1.jpg',
+    '/assets/hiace1.jpg',
+    '/assets/dala1.jpg',
 ];
 
 const AutoCarousel = () => {
@@ -20,7 +20,7 @@ const AutoCarousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[200px] lg:h-full overflow-hidden">
+    <div className="relative w-full h-[450px] lg:h-full overflow-hidden">
       <AnimatePresence>
         <motion.img
           key={currentIndex}

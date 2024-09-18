@@ -59,7 +59,7 @@ const FAQs = () => {
         </div>
         <div className='p-4 h-full'>
             <div className='h-full'>
-                <img src='/assets/faq.jpg' alt='faq' className='h-5/6 w-full object-cover' />
+                <img src='/assets/bus3.jpg' alt='faq' className='h-5/6 w-full object-cover' />
             </div>
         </div>
       </div>

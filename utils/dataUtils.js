@@ -1,4 +1,5 @@
-import { FaEnvelope, FaFacebook, FaLinkedin, FaLocationArrow, FaPhone, FaTwitter } from "react-icons/fa6"
+import { FaEnvelope, FaFacebook, FaFacebookMessenger, FaLinkedin, FaLocationArrow, FaPhone, FaTwitter, FaWhatsapp } from "react-icons/fa6"
+import { IoLogoWechat } from "react-icons/io5"
 
 export const navabrData = [
     {id:1, title:'Home', url:'/'},
@@ -36,4 +37,11 @@ export const footerContactUs = [
     {id:1, description:'2235 Colony Street New Haven, CT 06511', icon:<FaLocationArrow />},
     {id:2, description:'3434343434', icon:<FaPhone />},
     {id:3, description:'test@gmail.com', icon:<FaEnvelope />},
+]
+
+
+export const constReachOutData = [
+    {id:1, icon:<FaWhatsapp />, color:'text-green-500', link:'https://wa.me/+923116565767'},
+    {id:2, icon:<FaFacebookMessenger />, color:'text-blue-500', link:'https://m.me/your-username'},
+    {id:3, icon:<IoLogoWechat />, color:'text-green-500', link:'https://u.wechat.com/kNBMWkz1GC6nMdmVchaRnBk'},
 ]

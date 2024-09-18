@@ -38,10 +38,10 @@ const MiniAboutSection = () => {
     <div className='w-full lg:w-10/12 lg:mx-auto h-full py-20 px-6 lg:px-0'>
       <div className='grid grid-cols-1 lg:grid-cols-2'>
           <div className='relative'>
-            <img src='/assets/WhatsApp Image 2024-08-28 at 20.08.04.jpeg' className='w-full h-[500px] object-cover'/>
+            <img src='/assets/bus4.jpg' className='w-full h-[500px] object-cover'/>
             <div className="lg:absolute lg:top-0 lg:right-[-10%] lg:h-full lg:flex lg:items-center hidden">
               <img
-                src="/assets/WhatsApp Image 2024-08-28 at 20.08.05.jpeg"
+                src="/assets/dala2.jpg"
                 className="h-[200px] object-cover border-4 border-white"
               />
             </div>

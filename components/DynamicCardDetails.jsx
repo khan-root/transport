@@ -34,7 +34,7 @@ const DynamicCardDetails = (props) => {
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 1, ease: "easeInOut" }}
-                className='w-full h-full'
+                className='w-full h-full object-contain bg-primary-lightGray'
             />
         </div>
         <div className='p-3 space-y-4'>
@@ -55,12 +55,16 @@ const DynamicCardDetails = (props) => {
                             )
                             }
                         </div>
-                        <div>
+                        {typeof data.price === 'number' && 
+                        
+                        
+                            <div>
 
-                            <span className=''>
-                                AED
-                            </span>
-                        </div>
+                                <span className=''>
+                                    AED
+                                </span>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>

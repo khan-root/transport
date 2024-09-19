@@ -21,12 +21,12 @@ const ReachOutTab = () => {
 
   return (
     <div
-      className="fixed left-0 bottom-0 z-50"
+      className="fixed left-0 bottom-[50%] translate-y-[-50%] z-50"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <motion.div
-        className="flex items-center justify-center p-2 bg-primary-bluish text-white cursor-pointer rounded-tr-md "
+        className="flex items-center justify-center p-4 bg-primary-bluish text-white cursor-pointer rounded-tr-md rounded-br-md border border-primary-bluish hover:text-primary-bluish hover:bg-white "
         whileHover={{ y: 0 }}
       >
         Reach Out

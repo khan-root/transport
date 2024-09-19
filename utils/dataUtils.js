@@ -60,7 +60,16 @@ export const categoryData = {
         ],
         tableHeader:['Car Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a Mercedes V Class in Dubai is as follows',
-        image:'/assets/car1.jpg'
+        image:'/assets/car1.jpg',
+        interialImages:[
+            
+            '/assets/car1.jpg',
+            '/assets/sprinter3.jpg',
+            '/assets/sprinter2.jpg',
+
+        ],
+        btnName:'Car'
+
     },
     {id:2, price:'Negotiable', rangePrice: '', name:'Kia Carnival SX Prestige ', 
         ideal_seats:5, max_seat:'', class:'First Class',
@@ -73,7 +82,14 @@ export const categoryData = {
         ],
         tableHeader:['Car Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a Mercedes V Class in Dubai is as follows',
-        image:'/assets/kia.jpg'
+        image:'/assets/kia.jpg',
+        interialImages:[
+            
+            '/assets/kia.jpg',
+            '/assets/kia2.jpg',
+            '/assets/kia3.jpg',
+        ],
+        btnName:'Car'
     },
     {id:3, price:'Negotiable', rangePrice: '', name:'Toyota Fortuner', 
         ideal_seats:5, max_seat:'', class:'First Class',
@@ -86,7 +102,14 @@ export const categoryData = {
         ],
         tableHeader:['Car Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a Mercedes V Class in Dubai is as follows',
-        image:'/assets/toyotaFortuner.jpeg'
+        image:'/assets/toyotaFortuner.jpeg',
+        interialImages:[
+            
+            '/assets/fortuner2.jpg',
+            '/assets/toyotaFortuner.jpeg',
+            '/assets/fortuner3.jpg',
+        ],
+        btnName:'Car'
     },
     {id:4, price:'Negotiable', rangePrice: '', name:'Lexus 350', 
         ideal_seats:4, max_seat:'', class:'First Class',
@@ -99,7 +122,12 @@ export const categoryData = {
         ],
         tableHeader:['Car Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a Lexus 350 in Dubai is as follows',
-        image:'/assets/lexus.jpeg'
+        image:'/assets/lexus.jpeg',
+        interialImages:[
+            
+            '/assets/lexus.jpeg',
+        ],
+        btnName:'Car'
     },
     {id:5, price:'Negotiable', rangePrice: '', name:'Toyota Previa', 
         ideal_seats:6, max_seat:'', class:'First Class',
@@ -112,11 +140,17 @@ export const categoryData = {
         ],
         tableHeader:['Car Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a Toyota Previa in Dubai is as follows',
-        image:'/assets/previa.jpeg'
+        image:'/assets/previa.jpeg',
+        interialImages:[
+            
+            '/assets/previa.jpeg',
+        ],
+        btnName:'Car'
+        
     },
   ],
   buses: [
-    {id:1, price:1000, rangePrice: 1500, name:'51-Seater-Luxury-Buses ', 
+    {id:1, price:1000, rangePrice: 1500, name:'51-Seater-Luxury-Buses', 
         ideal_seats:51, max_seat:'', class:'First Class',
         main_description:'Ideal for large group transportation, this coach offers comfortable seating for up to 51 passengers with daily, hourly, and monthly rental options.',
         tableData :[
@@ -127,9 +161,13 @@ export const categoryData = {
         ],
         tableHeader:['Bus Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a 51-Seater-Luxury-Buses  in Dubai is as follows',
-        image:'/assets/bus1.jpg'
+        image:'/assets/bus1.jpg',
+        interialImages:[
+            '/assets/bus1.jpg'
+        ],
+        btnName:'Bus'
     },
-    {id:2, price:700, rangePrice: 1200, name:'35 Seater Yutong Luxury-Buses ', 
+    {id:2, price:700, rangePrice: 1200, name:'35 Seater Yutong Luxury-Buses', 
         ideal_seats:35, max_seat:'', class:'First Class',
         main_description:'Ideal for large group transportation, this coach offers comfortable seating for up to 35 passengers with daily, hourly, and monthly rental options.',
         tableData :[
@@ -140,7 +178,11 @@ export const categoryData = {
         ],
         tableHeader:['Bus Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a 35 Seater Yutong Luxury-Buses  in Dubai is as follows',
-        image:'/assets/bus2.jpg'
+        image:'/assets/bus2.jpg',
+        interialImages:[
+            '/assets/bus2.jpg'
+        ],
+        btnName:'Bus'
     },
     // {id:3, price:700, rangePrice: 1200, name:'35-Seater Charter Coach', 
     //     ideal_seats:35, max_seat:'', class:'First Class',
@@ -179,7 +221,11 @@ export const categoryData = {
         ],
         tableHeader:['Bus Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a 22-Seater Coaster in Dubai is as follows',
-        image:'/assets/bus3.jpg'
+        image:'/assets/bus3.jpg',
+        interialImages:[
+            '/assets/bus3.jpg'
+        ],
+        btnName:'Bus'
     },
   ],
   hiace: [
@@ -194,7 +240,13 @@ export const categoryData = {
         ],
         tableHeader:['Bus Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a Mercedes Sprinter  in Dubai is as follows',
-        image:'/assets/hiace1.jpg'
+        image:'/assets/hiace1.jpg',
+        interialImages:[
+            
+            '/assets/sprinter2.jpg',
+            '/assets/sprinter3.jpg',
+        ],
+        btnName:'Hiace'
     },
     {id:2, price:850, rangePrice: '', name:'15-Seater Hiace (HiRoof)', 
         ideal_seats:15, max_seat:'', class:'First Class',
@@ -207,7 +259,13 @@ export const categoryData = {
         ],
         tableHeader:['Hiace Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a 15-Seater Hiace (HiRoof) in Dubai is as follows',
-        image:'/assets/hiace3.jpeg'
+        image:'/assets/hiace3.jpeg',
+        interialImages:[
+            
+            '/assets/hiace1.jpg',
+            '/assets/hiace3.jpeg',
+        ],
+        btnName:'Hiace'
     },
   ],
 };

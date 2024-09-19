@@ -1,9 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 
-const tableHeader =[
-    
-]
+
 
 const VehcialImages = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -15,7 +13,7 @@ const VehcialImages = ({ images }) => {
   return (
     <div className="flex flex-col items-center space-y-4 w-ful">
       {/* Large Image */}
-      <div className="w-full max-w-md">
+      <div className="w-full">
         <img
           src={images[selectedImageIndex]}
           alt={`Vehicle Image ${selectedImageIndex + 1}`}

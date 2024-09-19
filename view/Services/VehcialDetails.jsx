@@ -4,13 +4,13 @@ import VehcialDetailsTable from './VehcialDetailsTable';
 import CustomBookNowButton from '@/components/CustomBookNowButton';
 
 
-const images = [
-  'https://via.placeholder.com/500x300.png?text=Car+Image+1',
-  'https://via.placeholder.com/500x300.png?text=Car+Image+2',
-  'https://via.placeholder.com/500x300.png?text=Car+Image+3',
-  'https://via.placeholder.com/500x300.png?text=Car+Image+4',
-  'https://via.placeholder.com/500x300.png?text=Car+Image+5',
-];
+// const images = [
+//   'https://via.placeholder.com/500x300.png?text=Car+Image+1',
+//   'https://via.placeholder.com/500x300.png?text=Car+Image+2',
+//   'https://via.placeholder.com/500x300.png?text=Car+Image+3',
+//   'https://via.placeholder.com/500x300.png?text=Car+Image+4',
+//   'https://via.placeholder.com/500x300.png?text=Car+Image+5',
+// ];
 
 const VehcialDetails = (props) => {
     const {detailsData} = props
@@ -21,7 +21,7 @@ const VehcialDetails = (props) => {
         {/* VehcialDetails {detailsData.name}*/}
         <div>
             <VehcialImages 
-                images = {images}
+                images = {detailsData?.interialImages}
             />
         </div>
         <div className='space-y-3'>

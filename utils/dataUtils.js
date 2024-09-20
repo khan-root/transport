@@ -5,7 +5,7 @@ export const navabrData = [
     {id:1, title:'Home', url:'/'},
     {id:2, title:'Services', url:'/services'},
     {id:3, title:'About', url:'/about'},
-    // {id:4, title:'Blog', url:'/blog'},
+    {id:4, title:'Gallery', url:'/gallery'},
     // {id:5, title:'Contact', url:'/contact'},
 ]
 
@@ -41,7 +41,7 @@ export const footerContactUs = [
 
 
 export const constReachOutData = [
-    {id:1, icon:<FaWhatsapp />, color:'text-green-500', link:'https://wa.me/+923116565767'},
+    {id:1, icon:<FaWhatsapp />, color:'text-green-500', link:'https://wa.me/+971568681888 '},
     {id:2, icon:<FaFacebookMessenger />, color:'text-blue-500', link:'https://m.me/your-username'},
     {id:3, icon:<IoLogoWechat />, color:'text-green-500', link:'https://u.wechat.com/kNBMWkz1GC6nMdmVchaRnBk'},
 ]

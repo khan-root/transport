@@ -50,7 +50,7 @@ const ReachOutTab = () => {
               <FaWhatsapp
                   className="text-green-500 cursor-pointer"
                   size={24}
-                  onClick={() => openLink('https://wa.me/+923116565767')}
+                  onClick={() => openLink('https://wa.me/+971568681888')}
               />
             </motion.span>
             <motion.span 
@@ -70,7 +70,7 @@ const ReachOutTab = () => {
               <IoLogoWechat
                   className="text-green-500 cursor-pointer"
                   size={24}
-                  // onClick={() => openLink('https://u.wechat.com/kNBMWkz1GC6nMdmVchaRnBk')}
+                  onClick={() => openLink('https://u.wechat.com/kNBMWkz1GC6nMdmVchaRnBk')}
               />
             </motion.span>
           </div>

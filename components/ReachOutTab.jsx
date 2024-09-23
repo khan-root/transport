@@ -1,94 +1,83 @@
 "use client"
-import { navabrData } from '@/utils/dataUtils'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
+import { IoLogoWechat } from 'react-icons/io5';
 
-const Navbar = () => {
-  const pathname = usePathname()
-  const [top, setTop] = useState(true)
-  const [openNav, setOpenNav] = useState(false);
+const ReachOutTab = () => {
+  const [showPopover, setShowPopover] = useState(false);
 
-  useEffect(() => {
-    const changeColor = () => {
-      setTop(window.scrollY < 110);
-    };
+  const handleMouseEnter = () => {
+    setShowPopover(true);
+  };
 
-    window.addEventListener('scroll', changeColor);
+  const handleMouseLeave = () => {
+    setShowPopover(false);
+  };
 
-    return () => {
-      window.removeEventListener('scroll', changeColor);
-    };
-  }, []);
-
-  const handleMobileMenuToggle = () => {
-    setOpenNav(!openNav);
+  const openLink = (url) => {
+    window.open(url, '_blank');
   };
 
   return (
-    <div className={`px-2 py-5 ${top ? 'bg-primary-bluish' : 'bg-primary-bluish'} relative`}>
-      <div className='w-full flex items-center justify-between lg:w-9/12 lg:mx-auto'>
-        <div className='flex items-center'>
-          <img src='/assets/logo.png' className='w-16 h-16 object-cover' />
-        </div>
-        <div className='hidden lg:flex items-center gap-3'>
-          {navabrData.map((ele) => {
-            const isActive = pathname === ele.url
-            return (
-              <Link href={ele.url} key={ele.id}
-                className={`text-[20px] text-white ${isActive ? 'border-b-2 border-white' : 'hover:border-b hover:border-b-white'}`}
-              >
-                {ele.title}
-              </Link>
-            );
-          })}
-        </div>
-        <div className='block lg:hidden'>
-          <span onClick={handleMobileMenuToggle} className='flex items-center justify-center cursor-pointer border border-white w-9 h-9'>
-            {openNav ? (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 text-white">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 text-white">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            )}
-          </span>
-        </div>
-      </div>
+    <div
+      className="fixed left-0 bottom-[50%] translate-y-[-50%] z-50"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <motion.div
+        className="flex items-center justify-center p-4 bg-primary-bluish text-white cursor-pointer rounded-tr-md rounded-br-md border border-primary-bluish hover:text-primary-bluish hover:bg-white "
+        whileHover={{ y: 0 }}
+      >
+        Reach Out
+      </motion.div>
 
-      {/* Mobile Navigation Menu with Framer Motion */}
-      <AnimatePresence>
-        {openNav && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className='lg:hidden mt-4'
-          >
-            <ul className='flex flex-col items-center space-y-4 bg-primary-bluish p-4 rounded-lg'>
-              {navabrData.map((ele) => {
-                const isActive = pathname === ele.url
-                return (
-                  <li key={ele.id}>
-                    <Link href={ele.url}
-                      onClick={() => setOpenNav(false)} // Close mobile menu on click
-                      className={`text-[20px] text-white ${isActive ? 'border-b-2 border-white' : 'hover:border-b hover:border-b-white'}`}
-                    >
-                      {ele.title}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      
+
+      {showPopover && (
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          className="absolute left-0 bottom-full mb-0 p-4 bg-white shadow-lg rounded-lg"
+        >
+          <div className="flex flex-col items-center space-y-4">
+            <motion.span 
+                whileHover={{scale:1.2}}
+                className='cursor-pointer'
+            >
+
+              <FaWhatsapp
+                  className="text-green-500 cursor-pointer"
+                  size={24}
+                  onClick={() => openLink('https://wa.me/+971568681888')}
+              />
+            </motion.span>
+            <motion.span 
+              whileHover={{scale:1.2}}
+              className='cursor-pointer'
+            >
+              <FaFacebookMessenger
+                  className="text-blue-500 cursor-pointer"
+                  size={24}
+                  onClick={() => openLink('https://www.facebook.com/profile.php?id=61564524538991&mibextid=ZbWKwL')}
+              />
+            </motion.span>
+            <motion.span 
+              whileHover={{scale:1.2}}
+              className='cursor-pointer'
+            >
+              <IoLogoWechat
+                  className="text-green-500 cursor-pointer"
+                  size={24}
+                  onClick={() => openLink('https://u.wechat.com/kNBMWkz1GC6nMdmVchaRnBk')}
+              />
+            </motion.span>
+          </div>
+        </motion.div>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Navbar;
+export default ReachOutTab;

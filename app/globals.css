@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
 
 .btn:before{
     transition: width 0.5s, height 05.s;
@@ -14,14 +14,10 @@
 /* styles/custom-scrollbar.css */
 ::-webkit-scrollbar {
     width: 10px;
-    /* Adjust the width of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #d4b57f;
-    /* Custom color for the scrollbar thumb */
-    /* border-radius: 6px; */
-    /* Round edges of the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -31,7 +27,4 @@
 
 ::-webkit-scrollbar-track {
     background-color: #f0f0f0;
-    /* Background color of the scrollbar track */
-    /* border-radius: 6px; */
-    /* Round edges of the scrollbar track */
 }

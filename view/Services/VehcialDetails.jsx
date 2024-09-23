@@ -1,7 +1,9 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import VehcialImages from './VehcialImages'
 import VehcialDetailsTable from './VehcialDetailsTable';
 import CustomBookNowButton from '@/components/CustomBookNowButton';
+import { useRouter } from 'next/navigation';
 
 
 // const images = [
@@ -14,6 +16,18 @@ import CustomBookNowButton from '@/components/CustomBookNowButton';
 
 const VehcialDetails = (props) => {
     const {detailsData} = props
+
+
+
+    const router = useRouter()
+
+
+    useEffect(() => {
+        if (!detailsData || Object.keys(detailsData).length === 0) {
+        // If detailsData is empty, redirect or handle the error
+        router.push('/services'); // Redirect if no data found
+        }
+    }, [detailsData, router]);
     // console.log(detailsData)
   return (
     <div className='w-full lg:w-6/12 lg:mx-auto h-full py-20 space-y-3 shadow-md my-2 px-10'>

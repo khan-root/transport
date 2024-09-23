@@ -8,7 +8,7 @@ const BusDetails = () => {
 
     const {detailsData} = useZustandServices()
   
-    console.log(detailsData)
+    // console.log(detailsData)
 
   return (
     <div>

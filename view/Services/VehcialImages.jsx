@@ -1,10 +1,16 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 
 const VehcialImages = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  const [imageArray, setImageArray] = useState([]);
+
+  useEffect(()=>{
+    setImageArray(images)
+  },[images])
 
   const handleThumbnailClick = (index) => {
     setSelectedImageIndex(index);
@@ -15,7 +21,7 @@ const VehcialImages = ({ images }) => {
       {/* Large Image */}
       <div className="w-full">
         <img
-          src={images[selectedImageIndex]}
+          src={imageArray && imageArray[selectedImageIndex]}
           alt={`Vehicle Image ${selectedImageIndex + 1}`}
           className="w-full h-auto rounded-lg object-cover"
         />
@@ -24,7 +30,7 @@ const VehcialImages = ({ images }) => {
       {/* Small Thumbnails */}
       <div className="flex overflow-hidden">
         <div className="flex space-x-4">
-          {images.map((image, index) => (
+          {imageArray?.map((image, index) => (
             <img
               key={index}
               src={image}

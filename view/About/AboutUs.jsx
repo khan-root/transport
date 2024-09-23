@@ -4,7 +4,7 @@ import React from 'react'
 const AboutUs = () => {
   return (
     <div className='w-full lg:w-10/12 lg:mx-auto h-full py-20 px-6 lg:px-0'>
-      <div className='grid grid-cols-1 lg:grid-cols-2'>
+      <div className='grid grid-cols-1 gap-3 lg:grid-cols-2'>
         
         <div className='lg:ps-20  lg:block flex justify-center'>
          <div className='space-y-3 '>

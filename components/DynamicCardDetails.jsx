@@ -12,7 +12,6 @@ const DynamicCardDetails = (props) => {
     const {data, btnName}  = props
 
     const { settingDetailsData } = useZustandServices()
-
     const router = useRouter();
 
   const handleBusDetailsClick = () => {
@@ -21,6 +20,8 @@ const DynamicCardDetails = (props) => {
     const busName = encodeURIComponent(data.name.replace(/\s+/g, '-').toLowerCase()); // Create a URL-friendly bus name
     router.push(`/services/details/${busName}`); 
   };
+
+  
 
 //   overflow: hidden;
 //   text-overflow: ellipsis;

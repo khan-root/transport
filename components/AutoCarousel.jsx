@@ -4,9 +4,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
     '/assets/bus1.jpg',
+    '/assets/carousel3.jpeg',
     '/assets/car1.jpg',
+    '/assets/carousel1.jpeg',
     '/assets/hiace1.jpg',
-    '/assets/dala1.jpg',
+    '/assets/carousel2.jpeg',
+    
 ];
 
 const AutoCarousel = () => {

@@ -4,7 +4,7 @@ const CopyRight = () => {
   return (
     <div className='bg-primary-bluish text-white py-5 flex items-center justify-center'>
         <span>
-            CopyRight
+            Copyright@2025
         </span>
     </div>
   )

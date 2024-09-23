@@ -11,9 +11,8 @@ export const navabrData = [
 
 
 export const footerSocialMedia  = [
-    {id:1, icon: <FaLinkedin />},
-    {id:2, icon: <FaTwitter />},
-    {id:3, icon: <FaFacebook />},
+    {id:1, icon: <FaWhatsapp />, link:'https://wa.me/+971568681888 '},
+    {id:3, icon: <FaFacebook />, link:'https://www.facebook.com/profile.php?id=61564524538991&mibextid=ZbWKwL'},
 ]
 
 
@@ -26,23 +25,24 @@ export const footerCompany = [
 ]
 
 export const footerOtherData = [
-    {id: 1, title:'Home'},
-    {id: 2, title:'Browse All'},
-    {id: 3, title:'Blog'},
-    {id: 4, title:'Support'},
+    {id: 1, title:'Home',url:'/'},
+    {id: 2, title:'Browse All', url:'/services'},
+    // {id: 3, title:'Blog'},
+    // {id: 4, title:'Support'},
 ]
 
 
+
 export const footerContactUs = [
-    {id:1, description:'2235 Colony Street New Haven, CT 06511', icon:<FaLocationArrow />},
-    {id:2, description:'3434343434', icon:<FaPhone />},
-    {id:3, description:'test@gmail.com', icon:<FaEnvelope />},
+    {id:1, description:'Dubai United Arab Emirates', icon:<FaLocationArrow />},
+    {id:2, description:'+971 56 868 1888', icon:<FaPhone />},
+    // {id:3, description:'test@gmail.com', icon:<FaEnvelope />},
 ]
 
 
 export const constReachOutData = [
     {id:1, icon:<FaWhatsapp />, color:'text-green-500', link:'https://wa.me/+971568681888 '},
-    {id:2, icon:<FaFacebookMessenger />, color:'text-blue-500', link:'https://m.me/your-username'},
+    {id:2, icon:<FaFacebookMessenger />, color:'text-blue-500', link:'https://www.facebook.com/profile.php?id=61564524538991&mibextid=ZbWKwL'},
     {id:3, icon:<IoLogoWechat />, color:'text-green-500', link:'https://u.wechat.com/kNBMWkz1GC6nMdmVchaRnBk'},
 ]
 

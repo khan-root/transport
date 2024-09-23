@@ -46,9 +46,9 @@ const Explorer = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-2 px-2'>
 
-                {exploreData.map((ele)=>(
+                {exploreData.map((ele, i)=>(
                     <DynamicCardDetails 
-                        key={ele.id}
+                        key={i}
                         data = {ele}
                         btnName = {ele.btnName}
                     />

@@ -32,8 +32,8 @@ const MiniAboutSection = () => {
             <span>Welcome to our website</span>
           </div>
           <div className='flex flex-col gap-3'>
-            <span>Which is the same as saying through shrinking from toil and pain. These cases are straightforward and easy to distinguish. In a free hour, when our power of choice is untrammeled, when our power of choice is untrammeled.</span>
-            <span>But those who do not know how to pursue pleasure rationally encounter extremely painful consequences.</span>
+            <span>At Zain Express, we provide reliable and affordable bus rental services for group trips, corporate events, and special occasions. Our modern, well-maintained fleet ensures comfort, while our professional drivers prioritize safety and punctuality.</span>
+            <span>We focus on delivering hassle-free journeys, whether for short trips or long-distance travel. Our team is committed to offering personalized transportation solutions that suit your schedule and budget.</span>
           </div>
           <div className='flex items-center justify-center lg:block'>
             <Button 

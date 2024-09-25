@@ -40,8 +40,8 @@ const Explorer = () => {
             <div className='w-full px-4 lg:w-[700px] lg:mx-auto'>
                 <div className='flex flex-col items-center'>
                     <span className='font-cursive text-[20px]'>Vehicle</span>
-                    <span className='text-[30px] text-center font-bold'>Explore The Horizon</span>
-                    <span className='text-center text-[16px]'>Then consider your profile and. Set an hourly rate that mirrors your and aptitude in the best light.GoFundMe are among the most popular.</span>
+                    <span className='text-[30px] text-center font-bold'>Explore The Vehicle</span>
+                    <span className='text-center text-[16px]'>Discover a diverse range of well-maintained vehicles, including buses, cars, Hiace vans, and more, tailored to meet your travel needs with comfort and reliability.</span>
                 </div>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-2 px-2'>

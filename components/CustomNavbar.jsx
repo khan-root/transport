@@ -1,6 +1,6 @@
 "use client"
 import { navabrData } from '@/utils/dataUtils'
-import { Collapse, MobileNav, Navbar } from '@material-tailwind/react'
+import { Collapse, Navbar } from '@material-tailwind/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'

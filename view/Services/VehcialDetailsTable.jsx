@@ -62,7 +62,7 @@ const VehcialDetailsTable = (props) => {
                         <span>
                           {ele.price}
                         </span>
-                        <span>AED</span>
+                        <span>AED/$</span>
                       </Typography>
                     </td>
                 </tr>

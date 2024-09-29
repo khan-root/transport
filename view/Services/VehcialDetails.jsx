@@ -4,6 +4,7 @@ import VehcialImages from './VehcialImages'
 import VehcialDetailsTable from './VehcialDetailsTable';
 import CustomBookNowButton from '@/components/CustomBookNowButton';
 import { useRouter } from 'next/navigation';
+import { GoDot, GoDotFill } from 'react-icons/go';
 
 
 // const images = [
@@ -30,7 +31,7 @@ const VehcialDetails = (props) => {
     }, [detailsData, router]);
     // console.log(detailsData)
   return (
-    <div className='w-full lg:w-6/12 lg:mx-auto h-full py-20 space-y-3 shadow-md my-2 px-10'>
+    <div className='w-full lg:w-9/12 lg:mx-auto h-full py-20 space-y-3 shadow-md my-2 px-10'>
         
         {/* VehcialDetails {detailsData.name}*/}
         <div>
@@ -53,14 +54,117 @@ const VehcialDetails = (props) => {
                             </>
                         )
                     }
-                    <span className='font-bold'>AED</span>
+                    <span className='font-bold'>AED/$</span>
                     
                 </div>
             </div>
             <div>
-                <span>A wonderful serenity has taken possssion of my entire souing like these sweet mornng spring whch enjoy with my whole heart I am alone, and feel the charm of existenceths spot whch was create For the bliss of souls like mineing am so happy my dear frend so absori bed in the exquste sens of mere. A wonderful serenity has taken possssion of my entire souing like these sweet mornng spring whch enjoy with my whole heart I am alone, and feel the charm of existenceths spot whch was create For the bliss of souls like mineing am so happy my dear frend so absori bed in the exquste sens of mere.</span>
+                <span>{detailsData.overviewDescription}</span>
             </div>
         </div>
+        {detailsData?.keyFeaturesTitle && 
+            <div className='space-y-2'>
+                <span className='text-[20px] text-black'>{detailsData.keyFeaturesTitle}</span>
+                <div className='space-y-2'>
+                    {detailsData?.keyFeatures?.map((ele, index)=>(
+                        <div className={`${ele.data ?  '' : 'flex gap-3'}`} key={index}>
+                            <div className='flex gap-2'>
+                                <span><GoDotFill /></span>
+                                <span className='text-[16px] text-nowrap'>{ele?.title} : </span>
+                            </div>
+                            <div className='flex'>
+                            <span className='text-gray-500'>{ele?.description}</span>
+                            <div className='flex flex-col'>
+                                {ele.data && ele.data?.map((subMenu, i)=>(
+
+                                    <div key={i} className='flex items-center gap-2  ml-10'>
+                                        <div className='flex items-center gap-2'>
+                                            <span><GoDot /></span>
+                                            {subMenu?.title && 
+                                                <span>{subMenu.title} :</span>
+                                            }
+                                        </div>
+                                        <div className='text-gray-500'>
+                                            <span>{subMenu.description}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        }
+        {detailsData?.safetyFeaturesTitle && 
+            <div className='space-y-2'>
+                <span className='text-[20px] text-black'>{detailsData.safetyFeaturesTitle}</span>
+                <div className='space-y-2'>
+                    {detailsData?.safteyFeatures?.map((ele, index)=>(
+                        <div className={`${ele.data ?  '' : 'flex gap-3'}`} key={index}>
+                            <div className='flex  gap-2'>
+                                <span><GoDotFill /></span>
+                                <span className='text-[16px] text-nowrap'>{ele?.title} : </span>
+                            </div>
+                            <div className='flex'>
+                                <span className='text-gray-500'>{ele?.description}</span>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        }
+        {detailsData.usageFeaturesTitle &&
+            <div className='space-y-2'>
+                <span className='text-[20px] text-black'>{detailsData.usageFeaturesTitle}</span>
+                <div className='space-y-2'>
+                    {detailsData?.usageFeatures?.map((ele, index)=>(
+                        <div className={`${ele.data ?  '' : 'flex gap-3'}`} key={index}>
+                            <div className='flex gap-2'>
+                                <span><GoDotFill /></span>
+                                <span className='text-[16px] text-nowrap'>{ele?.title} : </span>
+                            </div>
+                            <div className='flex'>
+                                <span className='text-gray-500'>{ele?.description}</span>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        }
+        {detailsData.otherFeaturesTitle &&
+            <div className='space-y-2'>
+                <span className='text-[20px] text-black'>{detailsData.otherFeaturesTitle}</span>
+                <div className='space-y-2'>
+                    {detailsData?.otherFeatures?.map((ele, index)=>(
+                        <>
+                        <div className='flex gap-2' key={index}>
+                            <div className='flex gap-2'>
+                                <span><GoDotFill /></span>
+                                <span className='text-[16px] text-nowrap'>{ele?.title} : </span>
+                            </div>
+                            <div className='flex'>
+                                <span className='text-gray-500'>{ele?.description}</span>
+                            </div>
+                        </div>
+
+                        {ele.data && 
+
+                            ele.data?.map((subMenu, i)=>(
+
+                                <div key={i} className='flex items-center ml-10 gap-2'>
+                                    <span><GoDot /></span>
+                                    <span className='text-[16px] text-gray-500'>{subMenu.description}</span>
+                                </div>
+                            ))
+                        }
+
+                        </>
+
+                    ))}
+                </div>
+            </div>
+        }
 
         <div>
             <VehcialDetailsTable 

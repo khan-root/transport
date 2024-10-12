@@ -31,7 +31,7 @@ const FAQs = () => {
             <span className='text-[20px] font-cursive'>FAQ</span>
             <span className='text-[25px] text-center font-bold font-teko'>Frequently Asked Questions</span>
             <span className='text-primary-blackGray text-center lg:text-start'>
-              Got questions? We've got answers! Explore our Frequently Asked Questions to find quick and clear information about our rental services, booking process, and vehicle options.
+              Got questions? We&apos;ve got answers! Explore our Frequently Asked Questions to find quick and clear information about our rental services, booking process, and vehicle options.
             </span>
           </div>
 

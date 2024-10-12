@@ -1,10 +1,10 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
-import CopyRight from "@/components/CopyRight";
-import ScrollToTopArrow from "@/components/ScrollToTopArrow";
-import CustomNavbar from "@/components/CustomNavbar";
-import ReachOutTab from "@/components/ReachOutTab";
+import Footer from "@/app/components/Footer";
+import CopyRight from "@/app/components/CopyRight";
+import ScrollToTopArrow from "@/app/components/ScrollToTopArrow";
+import CustomNavbar from "@/app/components/CustomNavbar";
+import ReachOutTab from "@/app/components/ReachOutTab";
 import fico from '../public/favicon.ico'
 const inter = Roboto({weight :['100', '300', '400', '500', '700', '900'], subsets: ["latin"] });
 

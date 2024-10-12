@@ -1,7 +1,7 @@
 "use client";
-import MiniHeroSection from '@/components/MiniHeroSection';
+import MiniHeroSection from '@/app/components/MiniHeroSection';
+import VehcialDetails from '@/app/view/Services/VehcialDetails';
 import useZustandServices from '@/services/useZustandServices';
-import VehcialDetails from '@/view/Services/VehcialDetails';
 import React from 'react';
 
 const BusDetails = () => {

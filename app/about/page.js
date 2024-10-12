@@ -1,5 +1,5 @@
-import MiniHeroSection from "@/components/MiniHeroSection";
-import Home from "@/view/About/Home";
+import MiniHeroSection from "@/app/components/MiniHeroSection";
+import Home from "@/app/view/About/Home";
 
 export default function AboutPage(){
     return(

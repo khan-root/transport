@@ -1,5 +1,5 @@
-import MiniHeroSection from "@/components/MiniHeroSection";
-import Home from "@/view/Gallery/Home";
+import MiniHeroSection from "@/app/components/MiniHeroSection";
+import Home from "@/app/view/Gallery/Home";
 
 export default function GalleryPage(){
     return(

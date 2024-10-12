@@ -1,4 +1,4 @@
-import { FaFacebook, FaFacebookMessenger, FaLocationArrow, FaPhone, FaWhatsapp } from "react-icons/fa6"
+import { FaEnvelope, FaFacebook, FaFacebookMessenger, FaLocationArrow, FaPhone, FaWhatsapp } from "react-icons/fa6"
 import { IoLogoWechat } from "react-icons/io5"
 
 export const navabrData = [
@@ -36,7 +36,7 @@ export const footerOtherData = [
 export const footerContactUs = [
     {id:1, description:'Dubai United Arab Emirates', icon:<FaLocationArrow />},
     {id:2, description:'+971 56 868 1888', icon:<FaPhone />},
-    // {id:3, description:'test@gmail.com', icon:<FaEnvelope />},
+    {id:3, description:'zainexpress2024@gmail.com', icon:<FaEnvelope />},
 ]
 
 
@@ -216,6 +216,8 @@ export const categoryData = {
         interialImages:[
             
             '/assets/lexus.jpeg',
+            '/assets/l3501.jpeg',
+            '/assets/l3502.jpeg',
         ],
         btnName:'Car',
         overviewDescription:'The Lexus RX 350 is a luxury midsize SUV (sport utility vehicle) known for its combination of comfort, performance, and advanced technology. As part of the Lexus lineup, it emphasizes quality, refinement, and a premium driving experience. The Lexus RX 350 is a well-rounded luxury SUV that excels in performance, safety, and comfort. Its blend of advanced technology, premium materials, and refined driving dynamics make it a compelling choice for those seeking a high-quality SUV (sport utility vehicle) experience.',
@@ -253,10 +255,10 @@ export const categoryData = {
         ],
         tableHeader:['Car Type', 'Time', 'Price'],
         tableDesctription:'The rental cost of a Toyota Previa in Dubai is as follows',
-        image:'/assets/previa.jpeg',
+        image:'/assets/tp1.jpeg',
         interialImages:[
-            
-            '/assets/previa.jpeg',
+            '/assets/tp1.jpeg',
+            '/assets/tp2.jpeg',
         ],
         btnName:'Car',
         overviewDescription:'The Toyota Previa is a mid-size MPV (multi-purpose vehicle) known for its spacious interior, versatility, and family-friendly features. The Toyota Previa remains a practical choice for families seeking a spacious, reliable, and comfortable vehicle. Its combination of versatility, safety features, and Toyota’s reputation for durability make it a solid option for those in need of an MPV.',
@@ -301,7 +303,9 @@ export const categoryData = {
         tableDesctription:'The rental cost of a 51-Seater-Luxury-Buses  in Dubai is as follows',
         image:'/assets/bus1.jpg',
         interialImages:[
-            '/assets/bus1.jpg'
+            '/assets/bus1.jpg',
+            '/assets/51s1.jpeg',
+            '/assets/51s2.jpeg',
         ],
         btnName:'Bus',
         overviewDescription:'51-seater luxury buses are designed for comfortable long-distance travel, catering to groups such as tourists, corporate clients, and event attendees. They blend comfort, safety, and amenities to enhance the travel experience.',
@@ -326,7 +330,7 @@ export const categoryData = {
         ]
 
     },
-    {id:2, price:'Negotiable', rangePrice: '', name:'35 Seater Yutong Luxury-Buses', 
+    {id:2, price:'Negotiable', rangePrice: '', name:'35 Seater Luxury-Buses', 
         ideal_seats:35, max_seat:'', class:'First Class',
         main_description:'Ideal for large group transportation, this coach offers comfortable seating for up to 35 passengers with daily, hourly, and monthly rental options.',
         tableData :[
@@ -339,10 +343,13 @@ export const categoryData = {
 
         ],
         tableHeader:['Bus Type', 'Time', 'Price'],
-        tableDesctription:'The rental cost of a 35 Seater Yutong Luxury-Buses  in Dubai is as follows',
+        tableDesctription:'The rental cost of a 35 Seater Luxury-Buses  in Dubai is as follows',
         image:'/assets/bus2.jpg',
         interialImages:[
-            '/assets/bus2.jpg'
+            '/assets/bus2.jpg',
+            '/assets/35s3.jpeg',
+            '/assets/35s1.jpeg',
+            '/assets/35s2.jpeg',
         ],
         btnName:'Bus',
         overviewDescription:'Yutong is a well-known manufacturer in the bus industry, recognized for producing high-quality vehicles that blend luxury, comfort, and performance. The 35-seater luxury bus from Yutong is designed for various transportation needs, including tourism, corporate travel, and private hire.',
@@ -382,7 +389,9 @@ export const categoryData = {
         tableDesctription:'The rental cost of a 22-Seater Coaster in Dubai is as follows',
         image:'/assets/bus3.jpg',
         interialImages:[
-            '/assets/bus3.jpg'
+            '/assets/bus3.jpg',
+            '/assets/22s1.jpeg',
+            '/assets/22s2.jpeg',
         ],
         btnName:'Bus',
         overviewDescription:'The 22-seater Coaster bus is a versatile and compact vehicle designed for group transportation, commonly used for tourism, corporate shuttles, school trips, and private hire. Known for its durability and comfort, the Coaster is a popular choice for both operators and passengers. The 22-seater Coaster bus offers a perfect blend of comfort, safety, and efficiency, making it an excellent choice for various group transportation needs.',
@@ -429,6 +438,8 @@ export const categoryData = {
         interialImages:[
             
             '/assets/sprinter2.jpg',
+            '/assets/sp1.jpeg',
+            '/assets/sp2.jpeg',
             '/assets/sprinter3.jpg',
         ],
         btnName:'Hiace'
@@ -447,8 +458,10 @@ export const categoryData = {
         image:'/assets/hiace3.jpeg',
         interialImages:[
             
-            '/assets/hiace1.jpg',
             '/assets/hiace3.jpeg',
+            '/assets/15s1.jpeg',
+            '/assets/15s3.jpeg',
+            '/assets/15s2.jpeg',
         ],
         btnName:'Hiace'
     },

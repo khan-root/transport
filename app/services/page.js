@@ -1,5 +1,5 @@
-import MiniHeroSection from "@/components/MiniHeroSection";
-import Home from "@/view/Services/Home";
+import MiniHeroSection from "@/app/components/MiniHeroSection";
+import Home from "@/app/view/Services/Home";
 
 export default function BrowsePage(){
     return(

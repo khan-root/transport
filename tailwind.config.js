@@ -11,10 +11,10 @@ module.exports = withMT({
     extend: {
       colors:{
         primary:{
-          bluish:'#d4b57f',
+          bluish:'#000',
           gray:'#f7f7f7',
           lightGray:'#f8f9fa',
-          blackGray:'#707070'
+          blackGray:'#000'
         },
 
       },

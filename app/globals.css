@@ -17,11 +17,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #d4b57f;
+    background-color: #000;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #d4b57f;
+    background-color: #000;
     /* Darker shade on hover */
 }
 

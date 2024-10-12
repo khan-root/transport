@@ -30,8 +30,8 @@ const MissionCoreValue = () => {
           <div className='flex flex-col gap-3 items-center lg:items-start'>
             <span className='text-[20px] font-cursive'>Our Mission & Core Values </span>
             <span className='text-primary-blackGray text-center lg:text-start'>
-                <b>Zain Express</b>'s mission is to provide remarkable transportation services that go increase our 
-                client's satisfaction, expectations, and enjoyment. We work hard to make every journey seamless 
+                <b>Zain Express&apos;s</b> mission is to provide remarkable transportation services that go increase our 
+                client&apos;s satisfaction, expectations, and enjoyment. We work hard to make every journey seamless 
                 and enjoyable by offering a flexible rental option, and an assurance of punctuality and reliability. 
             </span>
             <span className='text-primary-blackGray text-center lg:text-start'>

@@ -35,7 +35,7 @@ const RentalService = () => {
           <div className='flex flex-col gap-3 items-center lg:items-start'>
             <span className='text-[20px] font-cursive'>Our Key Rental Services </span>
             <span className='text-primary-blackGray text-center lg:text-start'>
-                <b>Zain Express</b>'s Bus Rental Dubai caters to a wide range of transportation needs and provides the following services: 
+                <b>Zain Express&apos;s</b> Bus Rental Dubai caters to a wide range of transportation needs and provides the following services: 
             </span>
           </div>
 

@@ -30,7 +30,7 @@ const ChooseUs = () => {
           <div className='flex flex-col gap-3 items-center lg:items-start'>
             <span className='text-[20px] font-cursive'>Why Choose us </span>
             <span className='text-primary-blackGray text-center lg:text-start'>
-                The following are some reasons why you should choose <b>Zain Express</b>'s for your transportation in Dubai and other emirates of UAE. 
+                The following are some reasons why you should choose  <b>Zain Express&apos;s</b> for your transportation in Dubai and other emirates of UAE. 
             </span>
             <span className='text-primary-blackGray text-center lg:text-start'>
                 Our company core values, which we followed throughout this long run make us one of the 

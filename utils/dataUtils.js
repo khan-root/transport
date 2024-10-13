@@ -428,8 +428,11 @@ export const categoryData = {
         main_description:'Ideal for large group transportation, this coach offers comfortable seating for up to 7 passengers with daily, hourly, and monthly rental options.',
         tableData :[
             {price:'Negotiable', title:'Monthly', time:'30 Days'},	
+            {price:'Negotiable', title:'Per Day', time:'10 Hrs'},
             {price:'Negotiable', title:'Per Day', time:'10 Hrs'},	
-            {price:'Negotiable', title:'Per Hour', time:'1Hr'},	
+            {price:'Negotiable', title:'Airport Transfer', time:'N/A'},	
+            {price:'Negotiable', title:'Point to Point Transfer ', time:'N/A'},		
+            
 
         ],
         tableHeader:['Bus Type', 'Time', 'Price'],
@@ -442,15 +445,25 @@ export const categoryData = {
             '/assets/sp2.jpeg',
             '/assets/sprinter3.jpg',
         ],
-        btnName:'Hiace'
+        btnName:'Hiace',
+        overviewDescription:'The Mercedes Sprinter is a versatile commercial van produced by Mercedes-Benz. It is well-known for its durability, performance, and a wide range of configurations. The Mercedes Sprinter is a highly regarded choice in the commercial vehicle market, combining practicality, advanced technology, and a reputation for quality.',
+        keyFeaturesTitle:'Technology and Features',
+        keyFeatures:[
+            {title:'Infotainment System', description:'Typically includes a touchscreen interface, Bluetooth connectivity, and navigation options.'},
+            {title:'Safety Features:', description:'Advanced safety systems like collision prevention, lane-keeping assist, and adaptive cruise control.'},
+            {title:'Customization', description:'Options for shelving, racks, and other cargo management solutions.'}
+        ],
     },
     {id:2, price:'Negotiable', rangePrice: '', name:'15-Seater Hiace (HiRoof)', 
         ideal_seats:15, max_seat:'', class:'First Class',
         main_description:'Ideal for large group transportation, this coach offers comfortable seating for up to 51 passengers with daily, hourly, and monthly rental options.',
         tableData :[
             {price:'Negotiable', title:'Monthly', time:'30 Days'},	
+            {price:'Negotiable', title:'Per Day', time:'10 Hrs'},
             {price:'Negotiable', title:'Per Day', time:'10 Hrs'},	
-            {price:'Negotiable', title:'Per Hour', time:'1Hr'},	
+            {price:'Negotiable', title:'Airport Transfer', time:'N/A'},	
+            {price:'Negotiable', title:'Point to Point Transfer ', time:'N/A'},		
+            
 
         ],
         tableHeader:['Hiace Type', 'Time', 'Price'],
@@ -463,7 +476,19 @@ export const categoryData = {
             '/assets/15s3.jpeg',
             '/assets/15s2.jpeg',
         ],
-        btnName:'Hiace'
+        btnName:'Hiace',
+        overviewDescription:'The Toyota Hiace is a popular van known for its reliability and spaciousness. The HiRoof variant offers increased headroom, making it ideal for passenger transport. The 15-Seater Hiace (HiRoof) is a versatile, reliable, and spacious option for passenger transport, making it a favorite among both commercial and private users.',
+        keyFeaturesTitle:'Technology and Features',
+        keyFeatures:[
+            {title:'Infotainment System', description:'Typically includes a touchscreen display, Bluetooth connectivity, USB ports, and optional navigation.'},
+            {title:'Safety Features', description:'Equipped with airbags, anti-lock braking system (ABS), stability control, and rear parking sensors.'},
+            {title:'Comfort Features', description:'Air conditioning for passenger comfort, adjustable seats, and ample storage pockets'}
+        ],
+        safetyFeaturesTitle:'Use Cases',
+        safteyFeatures:[
+            {description:'Commonly used for school transport, shuttle services, and as family vehicles. Also popular among businesses for transporting clients or staff.'}
+        ]
+
     },
   ],
 };

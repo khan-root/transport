@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
 import { IoLogoWechat } from 'react-icons/io5';
+import { BiPhoneCall } from 'react-icons/bi';
 
 const ReachOutTab = () => {
   const [showPopover, setShowPopover] = useState(false);
@@ -25,12 +26,31 @@ const ReachOutTab = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <motion.div
-        className="flex items-center justify-center p-4 bg-primary-bluish text-white cursor-pointer rounded-tr-md rounded-br-md border border-primary-bluish hover:text-primary-bluish hover:bg-white "
-        whileHover={{ y: 0 }}
-      >
-        Reach Out
-      </motion.div>
+      <div className="relative flex items-center justify-center">
+        <motion.div
+          className="flex items-center justify-center p-4 bg-primary-bluish text-white cursor-pointer rounded-full border border-primary-bluish hover:text-primary-bluish hover:bg-white"
+          whileHover={{ y: 0 }}
+        >
+          <span><BiPhoneCall /></span>
+        </motion.div>
+
+        {/* SVG for circular text */}
+        <svg className="absolute" width="100" height="100" viewBox="0 0 100 100">
+          <defs>
+            <path
+              id="circlePath"
+              d="M 75, 75 m -60, 0 a 60,60 0 1,1 110,0 a 60,60 0 1,1 -110,0"
+            />
+          </defs>
+
+          <text className="text-primary-bluish font-semibold">
+            <textPath href="#circlePath" startOffset="0">
+              Contact Us
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
 
       
 

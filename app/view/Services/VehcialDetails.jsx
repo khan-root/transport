@@ -7,14 +7,6 @@ import { useRouter } from 'next/navigation';
 import { GoDot, GoDotFill } from 'react-icons/go';
 
 
-// const images = [
-//   'https://via.placeholder.com/500x300.png?text=Car+Image+1',
-//   'https://via.placeholder.com/500x300.png?text=Car+Image+2',
-//   'https://via.placeholder.com/500x300.png?text=Car+Image+3',
-//   'https://via.placeholder.com/500x300.png?text=Car+Image+4',
-//   'https://via.placeholder.com/500x300.png?text=Car+Image+5',
-// ];
-
 const VehcialDetails = (props) => {
     const {detailsData} = props
 
@@ -77,14 +69,14 @@ const VehcialDetails = (props) => {
                             <div className='flex flex-col'>
                                 {ele.data && ele.data?.map((subMenu, i)=>(
 
-                                    <div key={i} className='flex items-center gap-2  ml-10'>
+                                    <div key={i} className='flex items-center gap-2 lex-col lg:flex-row'>
                                         <div className='flex items-center gap-2'>
                                             <span><GoDot /></span>
                                             {subMenu?.title && 
                                                 <span>{subMenu.title} :</span>
                                             }
                                         </div>
-                                        <div className='text-gray-500'>
+                                        <div className='text-gray-500 ml-10 lg:ml-0'>
                                             <span>{subMenu.description}</span>
                                         </div>
                                     </div>
@@ -104,7 +96,9 @@ const VehcialDetails = (props) => {
                         <div className={`${ele.data ?  '' : 'flex flex-col lg:flex-row gap-3'}`} key={index}>
                             <div className='flex  gap-2'>
                                 <span><GoDotFill /></span>
+                                {ele.title &&
                                 <span className='text-[16px] text-nowrap'>{ele?.title} : </span>
+                                }
                             </div>
                             <div className='flex'>
                                 <span className='text-gray-500 ml-10 lg:ml-0'>{ele?.description}</span>
@@ -143,7 +137,7 @@ const VehcialDetails = (props) => {
                                 <span><GoDotFill /></span>
                                 <span className='text-[16px] ml-10 lg:ml-0 text-nowrap'>{ele?.title} : </span>
                             </div>
-                            <div className='flex'>
+                            <div className='flex ml-10 lg:ml-0'>
                                 <span className='text-gray-500'>{ele?.description}</span>
                             </div>
                         </div>

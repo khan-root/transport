@@ -26,7 +26,7 @@ const Footer = () => {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6' >
             <div className='space-y-3'>
               <div className='flex items-center'>
-                <img src='/assets/logo.png' className='w-16 h-16 object-cover' alt='fooetLogo' />
+                <img src='/assets/logo.png' className='w-16 h-16 object-cover' alt='dubai-rental-bus' />
               </div>
               <div className='pt-3'>
                 <span className='text-white'>A leading bus rental in Dubai, with the diverse range of new fleets providing top-notch services to clients throughout the city and surrounding areas.</span>
@@ -39,22 +39,6 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            {/* <div className='space-y-3'>
-              <div className='text-[25px] font-bold text-white'>
-                <span>Company</span>
-              </div>
-              <div className='flex flex-col gap-3'>
-                {footerCompany.map((ele)=>(
-                  <motion.span key={ele.id}
-                    className='text-white hover:text-primary-bluish cursor-pointer'
-                    whileHover={{translateX: 10}}
-                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                  >
-                    {ele.title}
-                  </motion.span>
-                ))}
-              </div>
-            </div> */}
             <div className='space-y-3'>
               <div className='text-[25px] font-bold text-white'>
                 <span>About</span>
